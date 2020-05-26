@@ -12,7 +12,7 @@ def fun(string):
     a,b=0,0
     for i in range(1,len(string)+1):
         where_ob = string.find(i*'(') #opening brace
-        where_cb = string.find(i*')',where_ob #closing brace
+        where_cb = string.find(i*')',where_ob) #closing brace
         if where_ob < where_cb:
             a,b=where_ob+i,where_cb+1,
         else:break
